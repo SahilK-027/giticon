@@ -50,7 +50,7 @@ html {
 .main-page > .title{
   font-size: 100px;
   color: white;
-  padding-top: 50px;
+  padding-top: 150px;
   display: flex;
   align-items: center;
   font-weight: 600;
@@ -63,7 +63,7 @@ html {
 .main-page >.subtitle{
   padding-top: 15px; 
   font-size: 20px;
-  color: #7c8590;
+  color: #aaabad;
   margin-bottom: 20px;
 }
 .main-page >.button-div > a > #btn1{
@@ -101,6 +101,29 @@ html {
 .main-page >.button-div > a > #btn2:hover{
   border: 2px solid #fff;
 } 
+
+.idea-block{
+  margin-top: 40px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 16px;
+  backdrop-filter: blur(120px); 
+  border-radius: 20px;
+  border: 1px solid #45586e;
+}
+.idea-block > div{
+  display: flex;
+  align-item: center;
+}
+.fa-lightbulb{
+  font-size: 25px;
+  align-self: center;
+  margin: 0 20px;
+  color: #fee187;
+}
+.idea-text{
+  font-size: 16px; 
+}
 /*
   * Responsive code
 */
@@ -113,13 +136,14 @@ html {
     transform: rotate(90deg);
   }
   .main-page > .title{
+    padding-top: 50px;
     font-size: 80px;
   }
   .main-page >.subtitle{
     padding-top: 15px; 
     font-size: 18px;
-    color: #7c8590;
-    margin-bottom: 48vh;
+    color: white;
+    margin-bottom: 20vh;
   }
   .main-page >.button-div > a > #btn1{
     width: 140px;

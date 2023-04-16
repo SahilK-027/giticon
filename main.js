@@ -110,8 +110,6 @@ const atm = new THREE.Mesh(atmosphereGeometry, atmosphereMaterial);
 atm.scale.set(1.05, 1.05, 1.05);
 scene.add(atm);
 
-atm.position.set(-.09, .09, 0);
-
 const sphereGeometry = new THREE.SphereGeometry(2, 64, 64);
 const sphereMaterial = new THREE.MeshLambertMaterial({
         color: 0xffffff
@@ -119,9 +117,11 @@ const sphereMaterial = new THREE.MeshLambertMaterial({
 const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 sphere.castShadow = true;
 sphere.receiveShadow = true;
-sphere.rotation.set(0, Math.PI, 0);
+sphere.rotation.set(0.4, Math.PI, 0);
 scene.add(sphere);
 
+atm.position.set(2.38, 2.1, 0);
+sphere.position.set(2,1.8,0);
 const earth = new THREE.TextureLoader().load('./textures/map.png');
 
 //setup map overlay
@@ -293,7 +293,7 @@ window.addEventListener('resize', () => {
 =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
 */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 6;
+camera.position.z  = 6;
 if(mobile){
         camera.position.z  = 7;
 }
@@ -336,10 +336,10 @@ const tick = () => {
         previousTime = elapsedTime;
 
         // Animate particles
-        particles.rotation.y += deltaTime * 0.1
+        particles.rotation.y += deltaTime * 0.1;
 
         // Animate Globe
-        sphere.rotation.y += 0.001;
+        sphere.rotation.y += 0.002;
 
         // Animate curves
         if (renderCount < 10000) {
