@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+html {
+  background: #040d21;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  color: white;
+}
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  z-index: -1;
+}
+
+/*
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+          Main Page
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
+*/
+#app{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-lights{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+.main-page{
+  position: relative;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.main-page > .title{
+  font-size: 100px;
+  color: white;
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.main-page > .title> .title-img{
+  width: 70px;
+  height: 70px;
+  padding: 7px;
+}
+.main-page >.subtitle{
+  padding-top: 15px; 
+  font-size: 20px;
+  color: #7c8590;
+  margin-bottom: 20px;
+}
+.main-page >.button-div > a > #btn1{
+  width: 150px;
+  height: 50px;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 17px;
+  background: #5e39cb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.main-page >.button-div > a > #btn1:hover{
+  background: #472a9e;
+} 
+
+.main-page >.button-div > a > #btn2{
+  width: 150px;
+  height: 50px;
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 17px;
+  border: 2px solid #5e39cb;
+  background: transparent;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.5s ease;
+}
+.main-page >.button-div > a > #btn2:hover{
+  border: 2px solid #fff;
+} 
+/*
+  * Responsive code
+*/
+@media (max-width: 480px) {
+  .background-lights{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200%;
+    transform: rotate(90deg);
+  }
+  .main-page > .title{
+    font-size: 80px;
+  }
+  .main-page >.subtitle{
+    padding-top: 15px; 
+    font-size: 18px;
+    color: #7c8590;
+    margin-bottom: 48vh;
+  }
+  .main-page >.button-div > a > #btn1{
+    width: 140px;
+    height: 40px;
+    padding: 5px;
+    margin: 0px 3px;
+  }
+  .main-page >.button-div > a > #btn2{
+    width: 140px;
+    height: 40px;
+    padding: 5px;
+    margin: 0px 3px;
+  }
+}
