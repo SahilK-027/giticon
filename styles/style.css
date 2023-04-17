@@ -65,6 +65,7 @@ body{
   width: 70px;
   height: 70px;
   padding: 7px;
+  margin-top: 20px;
 }
 .main-page >.subtitle{
   padding-top: 15px; 
