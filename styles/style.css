@@ -6,12 +6,18 @@
 a {
   text-decoration: none;
 }
+p{
+  color: white;
+}
 html {
   background: #040d21;
   -webkit-font-smoothing: antialiased;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   color: white;
+}
+body{
+  background: transparent;
 }
 .webgl {
   position: fixed;
@@ -103,7 +109,7 @@ html {
 } 
 
 .idea-block{
-  margin-top: 40px;
+  margin: 20px 0px;
   display: flex;
   box-sizing: border-box;
   padding: 16px;
@@ -115,14 +121,12 @@ html {
   display: flex;
   align-item: center;
 }
-.fa-lightbulb{
-  font-size: 25px;
-  align-self: center;
-  margin: 0 20px;
-  color: #fee187;
-}
 .idea-text{
   font-size: 16px; 
+}
+
+.grid-column{
+  background: white;
 }
 /*
   * Responsive code

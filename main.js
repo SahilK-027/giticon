@@ -121,7 +121,7 @@ sphere.rotation.set(0.4, Math.PI, 0);
 scene.add(sphere);
 
 atm.position.set(2.38, 2.1, 0);
-sphere.position.set(2,1.8,0);
+sphere.position.set(2, 1.8, 0);
 const earth = new THREE.TextureLoader().load('./textures/map.png');
 
 //setup map overlay
@@ -259,7 +259,7 @@ const particlesMaterial = new THREE.PointsMaterial({
         sizeAttenuation: true,
         depthWrite: false,
         blending: THREE.AdditiveBlending,
-            map: pointTexture,
+        map: pointTexture,
         size: particlesize
 })
 
@@ -293,20 +293,29 @@ window.addEventListener('resize', () => {
 =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
 */
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z  = 6;
-if(mobile){
-        camera.position.z  = 7;
+camera.position.z = 6;
+if (mobile) {
+        camera.position.z = 7;
 }
 
 scene.add(camera);
 
-// Renderer
+/*
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Renderer
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
+*/
 const renderer = new THREE.WebGLRenderer({
         canvas: canvas,
         alpha: true
 });
 renderer.setSize(sizes.width, sizes.height);
 
+/*
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
+        Animation Frame
+=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
+*/
 let renderCount = 0;
 let currentGrowing = 0;
 let tubes = [tube1, tube2, tube3, tube4, tube5, tube6, tube7, tube8]
@@ -322,12 +331,6 @@ function GrowTube(index, renderCount) {
                 tubes[(tubes.length - 3) + index].setDrawRange(renderCount, 10000)
         }
 }
-
-/*
-=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
-        Animation Frame
-=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*= 
-*/
 const clock = new THREE.Clock();
 let previousTime = 0;
 const tick = () => {
