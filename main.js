@@ -15,7 +15,8 @@ m ""                                ""
 */
 import './styles/style.css';
 import * as THREE from 'three';
-
+import map from './textures/map.png';
+import star from './textures/1.jpg';
 /*
 =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
         Check mobile phone
@@ -122,7 +123,7 @@ scene.add(sphere);
 
 atm.position.set(2.38, 2.1, 0);
 sphere.position.set(2, 1.8, 0);
-const earth = new THREE.TextureLoader().load('./textures/map.png');
+const earth = new THREE.TextureLoader().load(map);
 
 //setup map overlay
 const overlayMaterial = new THREE.MeshBasicMaterial({
@@ -254,7 +255,7 @@ particlesGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 
 
 // Material
 let particlesize = 0.1
-const pointTexture = new THREE.TextureLoader().load('./textures/1.jpg');
+const pointTexture = new THREE.TextureLoader().load(star);
 const particlesMaterial = new THREE.PointsMaterial({
         sizeAttenuation: true,
         depthWrite: false,
