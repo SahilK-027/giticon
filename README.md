@@ -4,7 +4,7 @@
 
 ## Live
 
-- [Website](https://sk027-giticon.vercel.app
+- [Website](https://sk027-giticon.vercel.app)
 
 ## Setup
 
