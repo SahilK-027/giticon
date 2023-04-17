@@ -157,16 +157,32 @@ body{
 .box > .description{
   width: 72%;
   height: 100%;
-  backdrop-filter: blur(120px); 
-  padding: 10px;
+  backdrop-filter: blur(300px); 
+  padding: 10px 20px;
 }
 .box > .description > h1{
   margin: 0;
   margin-bottom: 10px;
   color: white;
+  font-size: 25px;
 }
 .box > .description >p{
   margin: 0;
+}
+.row{
+  margin: 10px 0;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+}
+.footer > p > a{
+  color: #7444ff;
+  transition: all 0.3s ease;
 }
 /*
   * Responsive code

@@ -2,6 +2,10 @@
 
 - As there are so many different emot-icons, giticon is list of some, which I choose to use as my git commit message. The project is not commercial, but rather my personal preference for including emojis in commit messages. This project is open source so, anyone can contribute by suggesting or adding new emojis.
 
+## Live
+
+- [Website](https://sk027-giticon.vercel.app
+
 ## Setup
 
 Download Node.js. Run this followed commands:
