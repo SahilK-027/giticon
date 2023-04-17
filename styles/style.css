@@ -127,7 +127,46 @@ body{
 }
 
 .grid-column{
-  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background: transparent;
+}
+.box{
+  width: 90%;
+  height: 110px;
+  display: flex;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border: 1px solid #45586e;
+  background: transparent;
+}
+.box > .icon{
+  width: 28%;
+  height: 100%;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-right: 1px solid #45586e;
+  backdrop-filter: blur(120px); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+.box > .description{
+  width: 72%;
+  height: 100%;
+  backdrop-filter: blur(120px); 
+  padding: 10px;
+}
+.box > .description > h1{
+  margin: 0;
+  margin-bottom: 10px;
+  color: white;
+}
+.box > .description >p{
+  margin: 0;
 }
 /*
   * Responsive code
