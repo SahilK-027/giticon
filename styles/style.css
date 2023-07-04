@@ -148,7 +148,7 @@ body{
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   border-right: 1px solid #45586e;
-  backdrop-filter: blur(120px); 
+  background: #000000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,7 +157,7 @@ body{
 .box > .description{
   width: 72%;
   height: 100%;
-  backdrop-filter: blur(300px); 
+  background: #121316;
   padding: 10px 20px;
 }
 .box > .description > h1{
