@@ -184,6 +184,192 @@ body{
   color: #7444ff;
   transition: all 0.3s ease;
 }
+.new-copy-btn{
+  position: absolute;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  border: 1px solid #45586e;
+  background: #121316;
+  color: white;
+}
+#check-1{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-1{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-2{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-2{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-3{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-3{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-4{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-4{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-5{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-5{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-6{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-6{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-7{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-7{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-8{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-8{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-9{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-9{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-10{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-10{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-11{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-11{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-12{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-12{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-13{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-13{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-14{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-14{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-15{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-15{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-16{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-16{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-17{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-17{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-18{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-18{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-19{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-19{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-20{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-20{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-21{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-21{
+  display: block;
+  transition: all 0.3s ease;
+}
+#check-22{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-22{
+  display: block;
+  transition: all 0.3s ease;
+}
 /*
   * Responsive code
 */

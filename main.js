@@ -18,6 +18,7 @@ import './styles/style.css';
 import * as THREE from 'three';
 import map from './textures/map.png';
 import star from './textures/1.jpg';
+import './Clipboard.js'
 /*
 =*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=*=
         Check mobile phone
