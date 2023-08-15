@@ -396,3 +396,72 @@ clipboard22.on('success', function (e) {
     e.clearSelection();
 });
 clipboard22
+
+
+
+
+let clipboard23= new ClipboardJS('#copy-btn-23');
+let copy23 = document.querySelector('#copy-23');
+let check23 = document.querySelector('#check-23');
+clipboard23.on('success', function (e) {
+    check23.style.display = "block";
+    copy23.style.display = "none";
+    setTimeout(() => {
+        check23.style.display = "none";
+        copy23.style.display = "block";
+    }, 1000)
+    e.clearSelection();
+});
+clipboard23
+
+
+
+
+let clipboard24= new ClipboardJS('#copy-btn-24');
+let copy24 = document.querySelector('#copy-24');
+let check24 = document.querySelector('#check-24');
+clipboard24.on('success', function (e) {
+    check24.style.display = "block";
+    copy24.style.display = "none";
+    setTimeout(() => {
+        check24.style.display = "none";
+        copy24.style.display = "block";
+    }, 1000)
+    e.clearSelection();
+});
+clipboard24
+
+
+
+
+let clipboard25= new ClipboardJS('#copy-btn-25');
+let copy25 = document.querySelector('#copy-25');
+let check25 = document.querySelector('#check-25');
+clipboard25.on('success', function (e) {
+    check25.style.display = "block";
+    copy25.style.display = "none";
+    setTimeout(() => {
+        check25.style.display = "none";
+        copy25.style.display = "block";
+    }, 1000)
+    e.clearSelection();
+});
+clipboard25
+
+
+
+
+
+let clipboard26= new ClipboardJS('#copy-btn-26');
+let copy26 = document.querySelector('#copy-26');
+let check26 = document.querySelector('#check-26');
+clipboard26.on('success', function (e) {
+    check26.style.display = "block";
+    copy26.style.display = "none";
+    setTimeout(() => {
+        check26.style.display = "none";
+        copy26.style.display = "block";
+    }, 1000)
+    e.clearSelection();
+});
+clipboard26

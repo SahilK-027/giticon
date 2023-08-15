@@ -370,6 +370,42 @@ body{
   display: block;
   transition: all 0.3s ease;
 }
+
+#check-23{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-23{
+  display: block;
+  transition: all 0.3s ease;
+}
+
+#check-24{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-24{
+  display: block;
+  transition: all 0.3s ease;
+}
+
+#check-25{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-25{
+  display: block;
+  transition: all 0.3s ease;
+}
+
+#check-26{
+  display: none;
+  transition: all 0.3s ease;
+}
+#copy-26{
+  display: block;
+  transition: all 0.3s ease;
+}
 /*
   * Responsive code
 */
