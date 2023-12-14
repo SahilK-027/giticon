@@ -123,8 +123,8 @@ sphere.receiveShadow = true;
 sphere.rotation.set(0.4, Math.PI, 0);
 scene.add(sphere);
 
-atm.position.set(2.38, 2.1, 0);
-sphere.position.set(2, 1.8, 0);
+atm.position.set(1.2, 2.1, 0);
+sphere.position.set(1, 1.8, 0);
 const earth = new THREE.TextureLoader().load(map);
 
 //setup map overlay
@@ -367,7 +367,6 @@ const tick = () => {
 
         camera.position.x += (parallaxX - camera.position.x) * 5 * deltaTime;
         camera.position.y += (parallaxY - camera.position.y) * 5 * deltaTime;
-
 
         renderer.render(scene, camera);
         window.requestAnimationFrame(tick);
